@@ -10,11 +10,11 @@ public class CompanyTest {
         String globalId = "GId57050269";
         String taxId = "TId57050269";
 
-        Company company = new Company(id, name, globalId, taxId);
+        Company seller = new Company(id, name, globalId, taxId);
         	
-        assert (company.getId().equals(id));
-        assert (company.getName().equals(name));
-        assert (company.equals(globalId));
-        assert (company.equals(taxId));
+        assert (seller.getId().equals(id));
+        assert (seller.getName().equals(name));
+        assert (seller.equals(globalId));
+        assert (seller.equals(taxId));
     }
 }
