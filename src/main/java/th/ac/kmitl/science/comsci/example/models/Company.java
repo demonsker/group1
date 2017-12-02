@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public abstract class Profile {
+public class Company {
     
     private String id;
     private String name;
@@ -8,6 +8,12 @@ public abstract class Profile {
     private String taxId;
     //TODO Create variable type of address class
     
+    public Company(String id, String name, String globalId, String taxId){
+        setId (id);
+        setName (name);
+        setGlobalId (globalId);
+        setTaxId (taxId);
+    }
     public String getTaxId() {
         return taxId;
     }
