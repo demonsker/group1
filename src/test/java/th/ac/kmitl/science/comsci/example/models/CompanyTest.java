@@ -14,7 +14,7 @@ public class CompanyTest {
         	
         assert (seller.getId().equals(id));
         assert (seller.getName().equals(name));
-        assert (seller.equals(globalId));
-        assert (seller.equals(taxId));
+        assert (company.getGlobalId().equals(globalId));
+        assert (company.getTaxId().equals(taxId));
     }
 }
