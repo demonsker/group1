@@ -6,10 +6,10 @@ public class ProfileTest extends Profile {
 	
     @Test
     public void testProfile(){
-        String id = "12345";
-        String name = "Prayuth";
-        String globalId = "11111";
-        String taxId = "22222";
+        String id = "id57050269";
+        String name = "Patipon Taweechat";
+        String globalId = "GId57050269";
+        String taxId = "TId57050269";
 		
         setId (id);
         setName (name);
