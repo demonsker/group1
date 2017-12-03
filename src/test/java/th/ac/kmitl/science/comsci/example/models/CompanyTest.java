@@ -4,7 +4,8 @@ import org.junit.Test;
 
 public class CompanyTest {
     
-    public void testCompany(){
+    @Test
+    public void shouldInitPropertyViaConstuctorCorrectly(){
         String id = "id57050269";
         String name = "Patipon Taweechat";
         String globalId = "GId57050269";
@@ -18,3 +19,4 @@ public class CompanyTest {
         assert (seller.getTaxId().equals(taxId));
     }
 }
+
