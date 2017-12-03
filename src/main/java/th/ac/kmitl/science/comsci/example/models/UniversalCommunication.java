@@ -1,12 +1,12 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class ElectronicAddress {
+public class UniversalCommunication {
 
     private String urlID = "";
 
     private String email = "";
     
-    public ElectronicAddress(String urlID,String email){
+    public UniversalCommunication(String urlID,String email){
         this.urlID = urlID;
         this.email = email;
     }
