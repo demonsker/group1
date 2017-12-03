@@ -1,29 +1,46 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-
-
 public class Address {
-    
     private String houseAddress;
-    private String Village;
+    private String village;
     private int citySubDivisionSection;
-    private String Street;
-    private String Alley;
+    private String street;
+    private String alley;
     private String citySubDivision;
-    private String City;
+    private String city;
     private String countrySubDivision;
-    private String Country;
+    private String country;
     
     public Address(){  
         houseAddress = "";
-        Village = "";
+        village = "";
         citySubDivisionSection = 0;
-        Street = "";
-        Alley = "";
+        street = "";
+        alley = "";
         citySubDivision = "";
-        City = "";
+        city = "";
         countrySubDivision = "";
-        Country = "";   
+        country = "";   
+    }
+    
+    public Address(String houseAddress,
+                   String village,
+                   int citySubDivisionSection,
+                   String street,
+                   String alley,
+                   String citySubDivision,
+                   String city,
+                   String countrySubDivision,
+                   String country){
+        this.houseAddress = houseAddress;
+        this.village = village;
+        this.citySubDivisionSection = citySubDivisionSection;
+        this.street = street;
+        this.alley = alley;
+        this.citySubDivision = citySubDivision;
+        this.city = city;
+        this.countrySubDivision = countrySubDivision;
+        this.country = country;
     }
     
     public void setHouseAddress(String houseAddress){
@@ -34,8 +51,8 @@ public class Address {
         return houseAddress;
     }
     
-    public void setVillage(String Village){
-        this.Village = Village;
+    public void setVillage(String village){
+        this.village = village;
     }
     
     public String getVillage(){
@@ -50,20 +67,20 @@ public class Address {
         return citySubDivisionSection;
     }
     
-    public void setStreet(String Street){
-        this.Street = Street;
+    public void setStreet(String street){
+        this.street = street;
     }
     
     public String getStreet(){
-        return Street;
+        return street;
     }
     
-    public void setAlley(String Alley){
-        this.Alley = Alley;
+    public void setAlley(String alley){
+        this.alley = alley;
     }
     
     public String getAlley(){
-        return Alley;
+        return alley;
     }
     
     public void setCitySubDivision(String citySubDivision){
@@ -74,12 +91,12 @@ public class Address {
         return citySubDivision;
     }
     
-    public void setCity(String City){
-        this.City = City;
+    public void setCity(String city){
+        this.city = city;
     }
     
     public String getCity(){
-        return City;
+        return city;
     }
     
     public void setCountrySubDivision(String countrySubDivision){
@@ -90,46 +107,24 @@ public class Address {
         return countrySubDivision;
     }
     
-    public void setCountry(String Country){
-        this.Country = Country;
+    public void setCountry(String country){
+        this.country = country;
     }
     
     public String getCountry(){
-        return Country;
-    }
-    
-    public void setAddress(String houseAddress,
-                           String Village,
-                           int citySubDivisionSection,
-                           String Street,
-                           String Alley,
-                           String citySubDivision,
-                           String City,
-                           String countrySubDivision,
-                           String Country){
-        this.houseAddress = houseAddress;
-        this.Village = Village;
-        this.citySubDivisionSection = citySubDivisionSection;
-        this.Street = Street;
-        this.Alley = Alley;
-        this.citySubDivision = citySubDivision;
-        this.City = City;
-        this.countrySubDivision = countrySubDivision;
-        this.Country = Country;
+        return country;
     }
     
     public String[] getAddress(){
         String []getAddress = {houseAddress,
-                               Village,
+                               village,
                                Integer.toString(citySubDivisionSection),
-                               Street,
-                               Alley,
+                               street,
+                               alley,
                                citySubDivision,
-                               City,
+                               city,
                                countrySubDivision,
-                               Country};
-        
-        return getAddress; 
+                               country};
+        return getAddress;
     }
-    
 }
