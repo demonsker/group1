@@ -7,8 +7,8 @@ public class ElectronicAddressTest{
     
     @Test
     public void shouldInitPropertyViaConstuctorCorrectly(){
-        String urlID = "www.Cat.com";
-        String Email = "Cat";
+        String urlID = "www.Cat202.com";
+        String Email = "Cat202@gmail.com";
 
         ElectronicAddress mail = new ElectronicAddress(urlID,Email);	
         assert (mail.getUrlID().equals(urlID));
