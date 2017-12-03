@@ -4,7 +4,7 @@ package th.ac.kmitl.science.comsci.example.models;
 import org.junit.Test;
 
 public class ElectronicAddressInCompanyTest{
-    
+
     @Test
     public void shouldInitPropertyViaConstuctorCorrectly(){
 
@@ -16,9 +16,9 @@ public class ElectronicAddressInCompanyTest{
 	String urlID = "www.cat.com";
 
         Company seller = new Company(id, name, globalId, taxId);
-        
+
 	seller.setElectronicAddress(urlID, Email);
-		
+
         assert (seller.getId().equals(id));
         assert (seller.getName().equals(name));
         assert (seller.getGlobalId().equals(globalId));
@@ -26,7 +26,6 @@ public class ElectronicAddressInCompanyTest{
 	assert (seller.getTaxId().equals(taxId));
 	assert (seller.getElectronicAddress().getEmail().equals(Email));
 	assert (seller.getElectronicAddress().getUrlID().equals(urlID));
-        
+
     }
 }
-
