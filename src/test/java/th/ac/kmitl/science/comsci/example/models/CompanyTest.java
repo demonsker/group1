@@ -18,7 +18,7 @@ public class CompanyTest {
         assert (seller.getGlobalId().equals(globalId));
         assert (seller.getTaxId().equals(taxId));
 	
-	canInitialUniversalCommunication(seller);
+        canInitialUniversalCommunication(seller);
         cannotChangeUniversalCommunication(seller);
 	
     }
