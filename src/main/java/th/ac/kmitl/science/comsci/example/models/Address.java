@@ -1,9 +1,9 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 public class Address {
-    private String houseAddress;
+    private String houseNumber;
     private String village;
-    private int citySubDivisionSection;
+    private int citySubDivisionSection=0;
     private String street;
     private String alley;
     private String citySubDivision;
@@ -11,16 +11,7 @@ public class Address {
     private String countrySubDivision;
     private String country;
     
-    public Address(){  
-        houseAddress = "";
-        village = "";
-        citySubDivisionSection = 0;
-        street = "";
-        alley = "";
-        citySubDivision = "";
-        city = "";
-        countrySubDivision = "";
-        country = "";   
+    public Address(){
     }
     
     public Address(String houseAddress,
@@ -32,7 +23,7 @@ public class Address {
                    String city,
                    String countrySubDivision,
                    String country){
-        this.houseAddress = houseAddress;
+        this.houseNumber = houseAddress;
         this.village = village;
         this.citySubDivisionSection = citySubDivisionSection;
         this.street = street;
@@ -43,12 +34,12 @@ public class Address {
         this.country = country;
     }
     
-    public void setHouseAddress(String houseAddress){
-        this.houseAddress = houseAddress; 
+    public void setHouseNumber(String houseAddress){
+        this.houseNumber = houseAddress; 
     }
     
-    public String getHouseAddress(){
-        return houseAddress;
+    public String getHouseNumber(){
+        return houseNumber;
     }
     
     public void setVillage(String village){
@@ -56,7 +47,7 @@ public class Address {
     }
     
     public String getVillage(){
-        return houseAddress;
+        return village;
     }
     
     public void setCitySubDivisionSection(int citySubDivisionSection){
@@ -116,7 +107,7 @@ public class Address {
     }
     
     public String[] getAddress(){
-        String []getAddress = {houseAddress,
+        String []getAddress = {houseNumber,
                                village,
                                Integer.toString(citySubDivisionSection),
                                street,
