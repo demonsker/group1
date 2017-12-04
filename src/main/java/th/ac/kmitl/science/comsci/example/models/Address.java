@@ -3,36 +3,13 @@ package th.ac.kmitl.science.comsci.example.models;
 public class Address {
     private String houseNumber;
     private String village;
-    private int citySubDivisionSection=0;
+    private String citySubDivisionSection;
     private String street;
     private String alley;
     private String citySubDivision;
     private String city;
     private String countrySubDivision;
     private String country;
-    
-    public Address(){
-    }
-    
-    public Address(String houseAddress,
-                   String village,
-                   int citySubDivisionSection,
-                   String street,
-                   String alley,
-                   String citySubDivision,
-                   String city,
-                   String countrySubDivision,
-                   String country){
-        this.houseNumber = houseAddress;
-        this.village = village;
-        this.citySubDivisionSection = citySubDivisionSection;
-        this.street = street;
-        this.alley = alley;
-        this.citySubDivision = citySubDivision;
-        this.city = city;
-        this.countrySubDivision = countrySubDivision;
-        this.country = country;
-    }
     
     public void setHouseNumber(String houseAddress){
         this.houseNumber = houseAddress; 
@@ -50,11 +27,11 @@ public class Address {
         return village;
     }
     
-    public void setCitySubDivisionSection(int citySubDivisionSection){
+    public void setCitySubDivisionSection(String citySubDivisionSection){
         this.citySubDivisionSection = citySubDivisionSection;
     }
     
-    public int getCitySubDivisionSection(){
+    public String getCitySubDivisionSection(){
         return citySubDivisionSection;
     }
     
@@ -109,7 +86,7 @@ public class Address {
     public String[] getAddress(){
         String []getAddress = {houseNumber,
                                village,
-                               Integer.toString(citySubDivisionSection),
+                               citySubDivisionSection,
                                street,
                                alley,
                                citySubDivision,
