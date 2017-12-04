@@ -8,17 +8,21 @@ public class UniversalCommunicationTest{
     public void shouldInitPropertyViaConstuctorCorrectly(){
         String urlID = "www.Cat202.com";
         String Email = "Cat202@gmail.com";
-
-        UniversalCommunication mail = new UniversalCommunication(urlID,Email);	
+        UniversalCommunication mail = new UniversalCommunication(urlID,Email);
+        
         assert (mail.getUrlID().equals(urlID));
         assert (mail.getEmail().equals(Email));
-        canChangeURLandEmail(mail);
+       
     }
     
-    public void canChangeURLandEmail(UniversalCommunication mail){
+    @Test
+    public void canChangeURLandEmail(){
+        String urlID = "www.Cat202.com";
+        String Email = "Cat202@gmail.com";
+        UniversalCommunication mail = new UniversalCommunication(urlID,Email);
+        
         String newEmail = "Dog202@gmail.com";
         String newurlID = "www.Dog202.com";
-        
         mail.setEmail(newEmail);
         mail.setURIID(newurlID);
         assert (mail.getUrlID().equals(newurlID));
