@@ -2,12 +2,12 @@ package th.ac.kmitl.science.comsci.example.models;
 
 public class UniversalCommunication {
 
-    private String uriID = "";
+    private String uriId = "";
 
     private String email = "";
     
-    public UniversalCommunication(String uriID,String email){
-        this.uriID = uriID;
+    public UniversalCommunication(String uriId,String email){
+        this.uriId = uriId;
         this.email = email;
     }
     
@@ -19,12 +19,12 @@ public class UniversalCommunication {
         this.email = email;
     }
 
-    public String getURIID() {
-        return uriID;
+    public String getUriId() {
+        return uriId;
     }
     
-    public void setURIID(String uriID) {
-        this.uriID = uriID;
+    public void setUriId(String uriId) {
+        this.uriId = uriId;
     }
 
 }
