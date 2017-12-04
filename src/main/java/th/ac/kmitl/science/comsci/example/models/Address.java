@@ -1,38 +1,55 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 public class Address {
-    private String houseNumber;
-    private String village;
-    private String citySubDivisionSection;
+    private String line1;
+    private String line2;
+    private String line3;
+    private String line4;
+    private String line5;
     private String street;
-    private String alley;
     private String citySubDivision;
     private String city;
     private String countrySubDivision;
     private String country;
     
-    public void setHouseNumber(String houseAddress){
-        this.houseNumber = houseAddress; 
+    public void setLine1(String line1){
+        this.line1 = line1; 
     }
     
-    public String getHouseNumber(){
-        return houseNumber;
+    public String getLine1(){
+        return line1;
     }
     
-    public void setVillage(String village){
-        this.village = village;
+    public void setLine2(String line2){
+        this.line2 = line2;
     }
     
-    public String getVillage(){
-        return village;
+    public String getLine2(){
+        return line2;
     }
     
-    public void setCitySubDivisionSection(String citySubDivisionSection){
-        this.citySubDivisionSection = citySubDivisionSection;
+    public void setLine3(String line3){
+        this.line3 = line3;
     }
     
-    public String getCitySubDivisionSection(){
-        return citySubDivisionSection;
+    public String getLine3(){
+        return line3;
+    }
+    
+    public void setLine4(String line4){
+        this.line4 = line4;
+    }
+    
+    public String getLine4(){
+        return line4;
+    }
+    
+    public void setLine5(String line5){
+        this.line5 = line5;
+    }
+    
+    public String getLine5(){
+        return line5;
     }
     
     public void setStreet(String street){
@@ -41,14 +58,6 @@ public class Address {
     
     public String getStreet(){
         return street;
-    }
-    
-    public void setAlley(String alley){
-        this.alley = alley;
-    }
-    
-    public String getAlley(){
-        return alley;
     }
     
     public void setCitySubDivision(String citySubDivision){
@@ -81,18 +90,5 @@ public class Address {
     
     public String getCountry(){
         return country;
-    }
-    
-    public String[] getAddress(){
-        String []getAddress = {houseNumber,
-                               village,
-                               citySubDivisionSection,
-                               street,
-                               alley,
-                               citySubDivision,
-                               city,
-                               countrySubDivision,
-                               country};
-        return getAddress;
     }
 }
