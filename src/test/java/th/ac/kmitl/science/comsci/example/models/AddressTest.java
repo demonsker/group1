@@ -6,33 +6,39 @@ public class AddressTest {
     private Address address = new Address();
     
     @Test
-    public void houseNumberCase(){
-        address.setHouseNumber("1103/52");
-        assert (address.getHouseNumber().contains("1103/52"));
+    public void line1Case(){
+        address.setLine1("1103/52");
+        assert (address.getLine1().contains("1103/52"));
     }
     
     @Test
-    public void villageCase(){
-        address.setVillage("Jarurat");
-        assert (address.getVillage().contains("Jarurat"));
+    public void line2Case(){
+        address.setLine2("Pratunam Clinic");
+        assert (address.getLine2().contains("Pratunam Clinic"));
     }
     
     @Test
-    public void citySubDivisionSectionCase(){
-        address.setCitySubDivisionSection("1");
-        assert (address.getCitySubDivisionSection().contains("1"));
+    public void line3Case(){
+        address.setLine3("Petchaburi31");
+        assert (address.getLine3().contains("Petchaburi31"));
+    }
+    
+    @Test
+    public void line4Case(){
+        address.setLine4("Jarurat");
+        assert (address.getLine4().contains("Jarurat"));
+    }
+    
+    @Test
+    public void line5Case(){
+        address.setLine5("1");
+        assert (address.getLine5().contains("1"));
     }
     
     @Test
     public void streetCase(){
         address.setStreet("Petchaburi");
         assert (address.getStreet().contains("Petchaburi"));
-    }
-    
-    @Test
-    public void alleyCase(){
-        address.setAlley("Petchaburi31");
-        assert (address.getAlley().contains("Petchaburi31"));
     }
     
     @Test
