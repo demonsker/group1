@@ -6,7 +6,7 @@ public class Company {
     private String name;
     private String globalId;  
     private String taxId;
-    private UniversalCommunication universalcommunication;
+    private UniversalCommunication universalCommunication;
     //TODO Create variable type of address class
     
     public Company(String id, String name, String globalId, String taxId){
@@ -17,11 +17,11 @@ public class Company {
     }
 
     public void setUniversalCommunication(String urlID, String email){
-                this.universalcommunication = new UniversalCommunication(urlID,email);      
+        this.universalCommunication = new UniversalCommunication(urlID,email);      
     }
     
     public UniversalCommunication getUniversalCommunication(){
-        return universalcommunication;
+        return universalCommunication;
     }
 	
     public String getTaxId() {
