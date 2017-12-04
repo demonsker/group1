@@ -25,13 +25,10 @@ public class CompanyTest {
         String name = "Patipon Taweechat";
         String globalId = "GId57050269";
         String taxId = "TId57050269";
-
         Company seller = new Company(id, name, globalId, taxId);
         
-        String email = "Cat202@gmail.com";
-        String uriId = "www.cat202.com";
-        seller.setUniversalCommunication(uriId, email);
-        assert (seller.getUniversalCommunication().getEmail().equals(email));
+        String uriId = "Cat202@gmail.com";
+        seller.setUniversalCommunication(uriId);
         assert (seller.getUniversalCommunication().getUriId().equals(uriId));
     }
 
@@ -41,15 +38,12 @@ public class CompanyTest {
         String name = "Patipon Taweechat";
         String globalId = "GId57050269";
         String taxId = "TId57050269";
-        String Email = "Cat202@gmail.com";
-        String uriId = "www.cat202.com";
+        String uriId = "Cat202@gmail.com";
         Company seller = new Company(id, name, globalId, taxId);
-        seller.setUniversalCommunication(uriId, Email);
+        seller.setUniversalCommunication(uriId);
         
-        String newEmail = "Dog202@gmail.com";
-        String newUriId = "www.Dog202.com";
-        seller.setUniversalCommunication(newUriId, newEmail);
-        assert (seller.getUniversalCommunication().getEmail().equals(newEmail));
+        String newUriId = "Dog202@gmail.com";
+        seller.setUniversalCommunication(newUriId);
         assert (seller.getUniversalCommunication().getUriId().equals(newUriId));
    }
 

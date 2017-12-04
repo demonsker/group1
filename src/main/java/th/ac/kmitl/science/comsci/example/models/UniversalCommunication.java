@@ -3,22 +3,11 @@ package th.ac.kmitl.science.comsci.example.models;
 public class UniversalCommunication {
 
     private String uriId = "";
-
-    private String email = "";
     
-    public UniversalCommunication(String uriId,String email){
+    public UniversalCommunication(String uriId){
         this.uriId = uriId;
-        this.email = email;
     }
     
-    public String getEmail() {
-        return email;
-    }
-    
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public String getUriId() {
         return uriId;
     }
