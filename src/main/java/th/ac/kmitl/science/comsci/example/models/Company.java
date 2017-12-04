@@ -16,8 +16,8 @@ public class Company {
         setTaxId (taxId);
     }
 
-    public void setUniversalCommunication(String urlID, String email){
-        this.universalCommunication = new UniversalCommunication(urlID,email);      
+    public void setUniversalCommunication(String uriID, String email){
+        this.universalCommunication = new UniversalCommunication(uriID,email);      
     }
     
     public UniversalCommunication getUniversalCommunication(){

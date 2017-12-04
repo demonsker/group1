@@ -6,26 +6,26 @@ public class UniversalCommunicationTest{
     
     @Test
     public void shouldInitPropertyViaConstuctorCorrectly(){
-        String urlID = "www.Cat202.com";
+        String uriID = "www.Cat202.com";
         String Email = "Cat202@gmail.com";
-        UniversalCommunication mail = new UniversalCommunication(urlID,Email);
+        UniversalCommunication mail = new UniversalCommunication(uriID,Email);
         
-        assert (mail.getUrlID().equals(urlID));
+        assert (mail.getURIID().equals(uriID));
         assert (mail.getEmail().equals(Email));
        
     }
     
     @Test
     public void canChangeURLandEmail(){
-        String urlID = "www.Cat202.com";
+        String uriID = "www.Cat202.com";
         String Email = "Cat202@gmail.com";
-        UniversalCommunication mail = new UniversalCommunication(urlID,Email);
+        UniversalCommunication mail = new UniversalCommunication(uriID,Email);
         
         String newEmail = "Dog202@gmail.com";
-        String newurlID = "www.Dog202.com";
+        String newuriID = "www.Dog202.com";
         mail.setEmail(newEmail);
-        mail.setURIID(newurlID);
-        assert (mail.getUrlID().equals(newurlID));
+        mail.setURIID(newuriID);
+        assert (mail.getURIID().equals(newuriID));
         assert (mail.getEmail().equals(newEmail));
     }
 }

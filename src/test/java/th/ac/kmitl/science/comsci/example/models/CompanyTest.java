@@ -29,10 +29,10 @@ public class CompanyTest {
         Company seller = new Company(id, name, globalId, taxId);
         
         String Email = "Cat202@gmail.com";
-        String urlID = "www.cat202.com";
-        seller.setUniversalCommunication(urlID, Email);
+        String uriID = "www.cat202.com";
+        seller.setUniversalCommunication(uriID, Email);
         assert (seller.getUniversalCommunication().getEmail().equals(Email));
-        assert (seller.getUniversalCommunication().getUrlID().equals(urlID));
+        assert (seller.getUniversalCommunication().getURIID().equals(uriID));
     }
 
    @Test	
@@ -42,15 +42,15 @@ public class CompanyTest {
         String globalId = "GId57050269";
         String taxId = "TId57050269";
         String Email = "Cat202@gmail.com";
-        String urlID = "www.cat202.com";
+        String uriID = "www.cat202.com";
         Company seller = new Company(id, name, globalId, taxId);
-        seller.setUniversalCommunication(urlID, Email);
+        seller.setUniversalCommunication(uriID, Email);
         
         String newEmail = "Dog202@gmail.com";
-        String newurlID = "www.Dog202.com";
-        seller.setUniversalCommunication(newurlID, newEmail);
+        String newuriID = "www.Dog202.com";
+        seller.setUniversalCommunication(newuriID, newEmail);
         assert (seller.getUniversalCommunication().getEmail().equals(newEmail));
-        assert (seller.getUniversalCommunication().getUrlID().equals(newurlID));
+        assert (seller.getUniversalCommunication().getURIID().equals(newuriID));
    }
 
 }
