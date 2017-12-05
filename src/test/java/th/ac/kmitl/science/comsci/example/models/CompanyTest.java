@@ -46,6 +46,38 @@ public class CompanyTest {
         seller.setUniversalCommunication(newUriId);
         assert (seller.getUniversalCommunication().getUriId().equals(newUriId));
    }
+   
+   @Test
+    public void getAllDataFromAddressInstanceCase(){
+        String id = "id57050269";
+        String name = "Patipon Taweechat";
+        String globalId = "GId57050269";
+        String taxId = "TId57050269";
+
+        Company seller = new Company(id, name, globalId, taxId);
+        
+        Address address = seller.getAddressInstance();
+        address.setLine1("1103/52");
+        address.setLine2("Pratunam Clinic");
+        address.setLine3("Petchaburi31");
+        address.setLine4("Jarurat");
+        address.setLine5("1");
+        address.setStreet("Petchaburi");
+        address.setCitySubDivision("Makkasan");
+        address.setCity("Ratchatewee");
+        address.setCountrySubDivision("Bangkok");
+        
+        assert (address.getLine1().contains("1103/52"));
+        assert (address.getLine2().contains("Pratunam Clinic"));
+        assert (address.getLine3().contains("Petchaburi31"));
+        assert (address.getLine4().contains("Jarurat"));
+        assert (address.getLine5().contains("1"));
+        assert (address.getStreet().contains("Petchaburi"));
+        assert (address.getCitySubDivision().contains("Makkasan"));
+        assert (address.getCity().contains("Ratchatewee"));
+        assert (address.getCountrySubDivision().contains("Bangkok"));
+        assert (address.getCountry().contains("Thailand"));
+    }
 
 }
 

@@ -7,7 +7,7 @@ public class Company {
     private String globalId;  
     private String taxId;
     private UniversalCommunication universalCommunication;
-    //TODO Create variable type of address class
+    private Address address = new Address();
     
     public Company(String id, String name, String globalId, String taxId){
         setId (id);
@@ -22,6 +22,10 @@ public class Company {
     
     public UniversalCommunication getUniversalCommunication(){
         return universalCommunication;
+    }
+    
+    public Address getAddressInstance(){
+        return address;
     }
 	
     public String getTaxId() {
