@@ -7,8 +7,8 @@
     </head>
     <body>
         <form action="#" method="post">
-            <jsp:include page="BuyerPage.jsp" />
-            <jsp:include page="SellerPage.jsp" />
+            <jsp:include page="buyerpage.jsp" />
+            <jsp:include page="sellerpage.jsp" />
 
             <!-- TODO Create Input of Sender and Receiver -->
             
