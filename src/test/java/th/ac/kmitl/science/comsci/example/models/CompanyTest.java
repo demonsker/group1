@@ -68,16 +68,16 @@ public class CompanyTest {
         address.setCountrySubDivision("Bangkok");
         address.setCountry("Thailand");
         
-        assert (address.getLine1().contains("1103/52"));
-        assert (address.getLine2().contains("Pratunam Clinic"));
-        assert (address.getLine3().contains("Petchaburi31"));
-        assert (address.getLine4().contains("Jarurat"));
-        assert (address.getLine5().contains("1"));
-        assert (address.getStreet().contains("Petchaburi"));
-        assert (address.getCitySubDivision().contains("Makkasan"));
-        assert (address.getCity().contains("Ratchatewee"));
-        assert (address.getCountrySubDivision().contains("Bangkok"));
-        assert (address.getCountry().contains("Thailand"));
+        assert (address.getLine1().equals("1103/52"));
+        assert (address.getLine2().equals("Pratunam Clinic"));
+        assert (address.getLine3().equals("Petchaburi31"));
+        assert (address.getLine4().equals("Jarurat"));
+        assert (address.getLine5().equals("1"));
+        assert (address.getStreet().equals("Petchaburi"));
+        assert (address.getCitySubDivision().equals("Makkasan"));
+        assert (address.getCity().equals("Ratchatewee"));
+        assert (address.getCountrySubDivision().equals("Bangkok"));
+        assert (address.getCountry().equals("Thailand"));
     }
 
 }
