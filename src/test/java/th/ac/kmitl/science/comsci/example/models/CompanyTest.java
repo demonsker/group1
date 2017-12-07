@@ -66,6 +66,7 @@ public class CompanyTest {
         address.setCitySubDivision("Makkasan");
         address.setCity("Ratchatewee");
         address.setCountrySubDivision("Bangkok");
+        address.setCountry("Thailand");
         
         assert (address.getLine1().contains("1103/52"));
         assert (address.getLine2().contains("Pratunam Clinic"));
