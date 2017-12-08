@@ -1,6 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 import org.junit.Test;
+import th.ac.kmitl.science.comsci.example.models.mocks.AddressMock;
 
 public class CountrySubDivisionNameTest {
     
