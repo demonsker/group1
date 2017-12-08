@@ -1,6 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 public class Address {
+    
     private String lineOne;
     private String lineTwo;
     private String lineThree;
@@ -91,4 +92,5 @@ public class Address {
     public String getCountry(){
         return country;
     }
+    
 }
