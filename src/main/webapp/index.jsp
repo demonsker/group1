@@ -6,11 +6,12 @@
 
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/tab.css">
         <title>หน้าหลัก</title>
     </head>
     <body>
         <H3>ใบกำกับภาษีอิเล็กทรอนิกส์</H3>
-        <button style="height:50px;width:150px" onclick="createTaxInvoice()" >ออกใบกำกับภาษี</button>
+        <button class="btn" onclick="createTaxInvoice()" >ออกใบกำกับภาษี</button>
     </body>
 </html>
 

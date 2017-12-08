@@ -9,20 +9,20 @@
     </head>
     <body>
         <div class="tab">
-            <button class="tablinks" onclick="openCompany(event, 'buyer')" id="defaultOpen">ผู้ซื้อ</button>
-            <button class="tablinks" onclick="openCompany(event, 'seller')">ผู้ขาย</button>
+            <button class="tab-links" onclick="changeCompanyTab(event, 'buyer')" id="defaultOpen">ผู้ซื้อ</button>
+            <button class="tab-links" onclick="changeCompanyTab(event, 'seller')">ผู้ขาย</button>
         </div>
         <form action="#" method="post">
-            <div id="buyer" class="tabcontent">
+            <div id="buyer" class="tab-content">
                 <jsp:include page="buyerPage.jsp" />
             </div>
-            <div id="seller" class="tabcontent">
+            <div id="seller" class="tab-content">
                 <jsp:include page="sellerPage.jsp" />
             </div>
             
             <!-- TODO Create Input of Sender and Receiver -->
             
-            <input style="height:40px;width:130px" type="submit" value="ออกใบกำกับภาษี" name="Submit" />
+            <button class="btn" name="submit">ออกใบกำกับภาษี</button>
         </form>    
     </body>
 </html>
