@@ -1,6 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 import org.junit.Test;
+import th.ac.kmitl.science.comsci.example.models.mocks.AddressMock;
 
 public class CityNameMappingTest {
     
@@ -19,6 +20,7 @@ public class CityNameMappingTest {
         assert(cityMapping.mapper("Bangkok Noi")==20);
     }
     
+    @Test
     public void testByMock(){
         assert(cityMapping.mapper(mock.city) == 37);
     }
