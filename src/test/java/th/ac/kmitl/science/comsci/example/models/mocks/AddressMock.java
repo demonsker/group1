@@ -9,7 +9,7 @@ public class AddressMock {
     public static String lineFive = "1" ;
     public static String street = "Petchaburi";
     public static String citySubDivision = "Makkasan";
-    public static String city = "Ratchatewee";
+    public static String city = "Ratchatewi";
     public static String countrySubDivision = "Bangkok";
     public static String country = "Thailand";  
 }
