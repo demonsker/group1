@@ -2,7 +2,7 @@ package th.ac.kmitl.science.comsci.example.models;
 
 import org.junit.Test;
 
-public class CitynameMappingTest {
+public class CityNameMappingTest {
     
     private CityName cityMapping = new CityName();
     private AddressMock mock = new AddressMock();
