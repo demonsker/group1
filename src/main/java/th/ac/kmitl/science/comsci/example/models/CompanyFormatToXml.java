@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class CompanyFormatToXMl {
+public class CompanyFormatToXml {
     
     private String headTag;
     private String companyId;
@@ -9,17 +9,17 @@ public class CompanyFormatToXMl {
     private String companyTax;
     private String xml;
       
-    public CompanyFormatToXMl (Company company, String headTag) {
+    public CompanyFormatToXml (Company company, String headTag) {
            
            this.headTag = changeFormat(headTag);
            this.companyId = company.getId();
            this.companyGlobalId = company.getGlobalId();
            this.companyName = company.getName();
            this.companyTax = company.getTaxId();
-           setXMl();
+           setXml();
     }
     
-    public void setXMl() {
+    public void setXml() {
          String xml = "<ram:"+this.headTag+"> "
                      +"\n\t<ram:ID> "+this.companyId+" </ram:ID>"
                      +"\n\t<ram:GlobalID> "+this.companyGlobalId+" </ram:GlobalID>"
