@@ -1,0 +1,31 @@
+package th.ac.kmitl.science.comsci.example.models;
+
+import org.junit.Test;
+import th.ac.kmitl.science.comsci.example.models.mocks.CompanyMock;
+
+public class CompanyFormatToXMlTest {
+ 
+    @Test
+    public void testConstructor() {
+        
+        Company buyer = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
+        CompanyFormatToXMl companyFormatToXml = new CompanyFormatToXMl(buyer,"buyer");
+        
+        assert(!companyFormatToXml.getXml().equals(null));  
+    }
+    
+    @Test
+    public void testSetHeadtag() {
+        
+        Company buyer = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
+        CompanyFormatToXMl companyFormatToXml = new CompanyFormatToXMl(buyer,"buyer");
+        
+        assert(companyFormatToXml.getHeadTag().equals("BuyerCITradeParty"));
+        
+        companyFormatToXml.setHeadTag("seller");
+        
+        assert(companyFormatToXml.getHeadTag().equals("SellerCITradeParty"));
+    }
+   
+
+}
