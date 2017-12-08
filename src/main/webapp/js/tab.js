@@ -5,11 +5,11 @@
         tablinks = document.getElementsByClassName("tab-links");
 
         for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+            tabcontent[i].style.display = "none";
         }
         
         for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
         }
 
         document.getElementById(companyName).style.display = "block";

@@ -11,12 +11,6 @@
     </head>
     <body>
         <H3>ใบกำกับภาษีอิเล็กทรอนิกส์</H3>
-        <button class="btn" onclick="createTaxInvoice()" >ออกใบกำกับภาษี</button>
+        <a href="createTaxInvoice.jsp"><button class="btn">ออกใบกำกับภาษี</button></a>
     </body>
 </html>
-
-<script>
-function createTaxInvoice(){
-    location.href = 'createTaxInvoice.jsp';
-}
-</script>
