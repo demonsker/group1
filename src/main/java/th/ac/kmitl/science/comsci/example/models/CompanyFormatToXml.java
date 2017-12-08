@@ -1,5 +1,7 @@
 package th.ac.kmitl.science.comsci.example.models;
 
+
+
 public class CompanyFormatToXml {
     
     private String headTag;
@@ -11,7 +13,8 @@ public class CompanyFormatToXml {
       
     public CompanyFormatToXml (Company company, String headTag) {
            
-           this.headTag = changeFormat(headTag);
+           HeadTagCompanyFormatToXml headTags = HeadTagCompanyFormatToXml.valueOf(headTag);
+           this.headTag = headTags.getheadTag();
            this.companyId = company.getId();
            this.companyGlobalId = company.getGlobalId();
            this.companyName = company.getName();
@@ -30,17 +33,7 @@ public class CompanyFormatToXml {
                      +"\n</ram:SpecifiedClLegalOrganization> ";  
         this.xml = xml;
     }
-    
-    private String changeFormat(String headTag) {
-        
-         if( headTag == "buyer")
-                headTag = "BuyerCITradeParty";
-           else
-                headTag = "SellerCITradeParty";
-         
-        return headTag;
-    }
-    
+     
     public String getXml() {
         return this.xml;
     }
@@ -50,7 +43,9 @@ public class CompanyFormatToXml {
     }
     
     public void setHeadTag(String headTag)  {
-        this.headTag = changeFormat(headTag);
+        HeadTagCompanyFormatToXml headTags = HeadTagCompanyFormatToXml.valueOf(headTag);
+        this.headTag = headTags.getheadTag();
+        setXml();
     }
     
     public String getCompanyId() {
