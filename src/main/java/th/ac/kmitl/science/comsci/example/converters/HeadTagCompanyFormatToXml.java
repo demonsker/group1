@@ -1,4 +1,4 @@
-package th.ac.kmitl.science.comsci.example.models;
+package th.ac.kmitl.science.comsci.example.converters;
 
 public enum HeadTagCompanyFormatToXml{
   buyer("BuyerCITradeParty"), 
