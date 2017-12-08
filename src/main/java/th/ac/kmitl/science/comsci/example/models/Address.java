@@ -1,55 +1,55 @@
 package th.ac.kmitl.science.comsci.example.models;
 
 public class Address {
-    private String line1;
-    private String line2;
-    private String line3;
-    private String line4;
-    private String line5;
+    private String lineOne;
+    private String lineTwo;
+    private String lineThree;
+    private String lineFour;
+    private String lineFive;
     private String street;
     private String citySubDivision;
     private String city;
     private String countrySubDivision;
     private String country;
     
-    public void setLine1(String line1){
-        this.line1 = line1; 
+    public void setLineOne(String lineOne){
+        this.lineOne = lineOne; 
     }
     
-    public String getLine1(){
-        return line1;
+    public String getLineOne(){
+        return lineOne;
     }
     
-    public void setLine2(String line2){
-        this.line2 = line2;
+    public void setLineTwo(String lineTwo){
+        this.lineTwo = lineTwo;
     }
     
-    public String getLine2(){
-        return line2;
+    public String getLineTwo(){
+        return lineTwo;
     }
     
-    public void setLine3(String line3){
-        this.line3 = line3;
+    public void setLineThree(String lineThree){
+        this.lineThree = lineThree;
     }
     
-    public String getLine3(){
-        return line3;
+    public String getLineThree(){
+        return lineThree;
     }
     
-    public void setLine4(String line4){
-        this.line4 = line4;
+    public void setLineFour(String lineFour){
+        this.lineFour = lineFour;
     }
     
-    public String getLine4(){
-        return line4;
+    public String getLineFour(){
+        return lineFour;
     }
     
-    public void setLine5(String line5){
-        this.line5 = line5;
+    public void setLineFive(String lineFive){
+        this.lineFive = lineFive;
     }
     
-    public String getLine5(){
-        return line5;
+    public String getLineFive(){
+        return lineFive;
     }
     
     public void setStreet(String street){

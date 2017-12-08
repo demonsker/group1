@@ -40,22 +40,22 @@ public class CompanyTest {
         Company seller = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
         
         Address address = seller.getAddressInstance();
-        address.setLine1(AddressMock.line1);
-        address.setLine2(AddressMock.line2);
-        address.setLine3(AddressMock.line3);
-        address.setLine4(AddressMock.line4);
-        address.setLine5(AddressMock.line5);
+        address.setLineOne(AddressMock.lineOne);
+        address.setLineTwo(AddressMock.lineTwo);
+        address.setLineThree(AddressMock.lineThree);
+        address.setLineFour(AddressMock.lineFour);
+        address.setLineFive(AddressMock.lineFive);
         address.setStreet(AddressMock.street);
         address.setCitySubDivision(AddressMock.citySubDivision);
         address.setCity(AddressMock.city);
         address.setCountrySubDivision(AddressMock.countrySubDivision);
         address.setCountry(AddressMock.country);
         
-        assert (address.getLine1().equals(AddressMock.line1));
-        assert (address.getLine2().equals(AddressMock.line2));
-        assert (address.getLine3().equals(AddressMock.line3));
-        assert (address.getLine4().equals(AddressMock.line4));
-        assert (address.getLine5().equals(AddressMock.line5));
+        assert (address.getLineOne().equals(AddressMock.lineOne));
+        assert (address.getLineTwo().equals(AddressMock.lineTwo));
+        assert (address.getLineThree().equals(AddressMock.lineThree));
+        assert (address.getLineFour().equals(AddressMock.lineFour));
+        assert (address.getLineFive().equals(AddressMock.lineFive));
         assert (address.getStreet().equals(AddressMock.street));
         assert (address.getCitySubDivision().equals(AddressMock.citySubDivision));
         assert (address.getCity().equals(AddressMock.city));

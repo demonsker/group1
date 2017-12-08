@@ -7,33 +7,33 @@ public class AddressTest {
     private Address address = new Address();
     
     @Test
-    public void line1Case(){
-        address.setLine1(AddressMock.line1);
-        assert (address.getLine1().contains(AddressMock.line1));
+    public void lineOneCase(){
+        address.setLineOne(AddressMock.lineOne);
+        assert (address.getLineOne().contains(AddressMock.lineOne));
     }
     
     @Test
-    public void line2Case(){
-        address.setLine2(AddressMock.line2);
-        assert (address.getLine2().contains(AddressMock.line2));
+    public void lineTwoCase(){
+        address.setLineTwo(AddressMock.lineTwo);
+        assert (address.getLineTwo().contains(AddressMock.lineTwo));
     }
     
     @Test
-    public void line3Case(){
-        address.setLine3(AddressMock.line3);
-        assert (address.getLine3().contains(AddressMock.line3));
+    public void lineThreeCase(){
+        address.setLineThree(AddressMock.lineThree);
+        assert (address.getLineThree().contains(AddressMock.lineThree));
     }
     
     @Test
-    public void line4Case(){
-        address.setLine4(AddressMock.line4);
-        assert (address.getLine4().contains(AddressMock.line4));
+    public void lineFourCase(){
+        address.setLineFour(AddressMock.lineFour);
+        assert (address.getLineFour().contains(AddressMock.lineFour));
     }
     
     @Test
     public void line5Case(){
-        address.setLine5(AddressMock.line5);
-        assert (address.getLine5().contains(AddressMock.line5));
+        address.setLineFive(AddressMock.lineFive);
+        assert (address.getLineFive().contains(AddressMock.lineFive));
     }
     
     @Test
