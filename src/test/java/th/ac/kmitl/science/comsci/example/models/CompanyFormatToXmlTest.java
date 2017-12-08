@@ -26,6 +26,4 @@ public class CompanyFormatToXmlTest {
         
         assert(companyFormatToXml.getHeadTag().equals("SellerCITradeParty"));
     }
-   
-
 }
