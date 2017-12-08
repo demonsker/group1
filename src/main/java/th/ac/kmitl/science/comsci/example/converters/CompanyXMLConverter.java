@@ -2,7 +2,7 @@ package th.ac.kmitl.science.comsci.example.converters;
 
 import th.ac.kmitl.science.comsci.example.models.Company;
 
-public class CompanyFormatToXml {
+public class CompanyXMLConverter  {
     
     private String headTag;
     private String companyId;
@@ -11,7 +11,7 @@ public class CompanyFormatToXml {
     private String companyTax;
     private String xml;
       
-    public CompanyFormatToXml (Company company, String headTag) {
+    public CompanyXMLConverter (Company company, String headTag) {
            
            HeadTagCompanyFormatToXml headTags = HeadTagCompanyFormatToXml.valueOf(headTag);
            this.headTag = headTags.getheadTag();
