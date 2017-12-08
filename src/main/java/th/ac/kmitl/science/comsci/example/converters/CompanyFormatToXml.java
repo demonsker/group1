@@ -2,8 +2,6 @@ package th.ac.kmitl.science.comsci.example.converters;
 
 import th.ac.kmitl.science.comsci.example.models.Company;
 
-
-
 public class CompanyFormatToXml {
     
     private String headTag;
