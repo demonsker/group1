@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class CitynameMappingTest {
     
-    private Cityname cityMapping = new Cityname();
+    private CityName cityMapping = new CityName();
     private AddressMock mock = new AddressMock();
     
     @Test
