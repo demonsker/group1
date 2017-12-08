@@ -13,7 +13,7 @@ public class CompanyXMLConverter  {
       
     public CompanyXMLConverter (Company company, String headTag) {
            
-           HeadTagCompanyFormatToXml headTags = HeadTagCompanyFormatToXml.valueOf(headTag);
+           HeadTagCompanyXMLConverter headTags = HeadTagCompanyXMLConverter.valueOf(headTag);
            this.headTag = headTags.getheadTag();
            this.companyId = company.getId();
            this.companyGlobalId = company.getGlobalId();
@@ -43,7 +43,7 @@ public class CompanyXMLConverter  {
     }
     
     public void setHeadTag(String headTag)  {
-        HeadTagCompanyFormatToXml headTags = HeadTagCompanyFormatToXml.valueOf(headTag);
+        HeadTagCompanyXMLConverter headTags = HeadTagCompanyXMLConverter.valueOf(headTag);
         this.headTag = headTags.getheadTag();
         setXml();
     }
