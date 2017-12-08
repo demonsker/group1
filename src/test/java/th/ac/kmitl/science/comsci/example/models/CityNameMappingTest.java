@@ -19,6 +19,7 @@ public class CityNameMappingTest {
         assert(cityMapping.mapper("Bangkok Noi")==20);
     }
     
+    @Test
     public void testByMock(){
         assert(cityMapping.mapper(mock.city) == 37);
     }
