@@ -9,7 +9,7 @@ public class Cityname implements Mapping {
             case "Dusit"                : return 2;
             case "Nong Chok"            : return 3;
             case "Bang Ruk"             : return 4;
-            case "Bnag Khen"            : return 5;
+            case "Bang Khen"            : return 5;
             case "Bang Kapi"            : return 6;
             case "Pathum Wan"           : return 7;
             case "Pom Prap Sattru Phai" : return 8;
