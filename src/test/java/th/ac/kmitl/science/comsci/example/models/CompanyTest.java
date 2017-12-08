@@ -30,8 +30,8 @@ public class CompanyTest {
         Company seller = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
         seller.setUniversalCommunication(UniversalCommunicationMock.uriId);
         
-        seller.setUniversalCommunication(UniversalCommunicationMock.newuriId);
-        assert (seller.getUniversalCommunication().getUriId().equals(UniversalCommunicationMock.newuriId));
+        seller.setUniversalCommunication(UniversalCommunicationMock.newUriId);
+        assert (seller.getUniversalCommunication().getUriId().equals(UniversalCommunicationMock.newUriId));
    }
    
    @Test

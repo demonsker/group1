@@ -14,8 +14,8 @@ public class UniversalCommunicationTest{
     @Test
     public void canChangeURL(){
         UniversalCommunication mail = new UniversalCommunication(UniversalCommunicationMock.uriId);   
-        mail.setUriId(UniversalCommunicationMock.newuriId);
-        assert (mail.getUriId().equals(UniversalCommunicationMock.newuriId));
+        mail.setUriId(UniversalCommunicationMock.newUriId);
+        assert (mail.getUriId().equals(UniversalCommunicationMock.newUriId));
     }
 }
 
