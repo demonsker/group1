@@ -63,6 +63,6 @@ public class AddressTest {
     @Test
     public void countryCase(){
         address.setCountry(AddressMock.country);
-        assert (address.getCountry().contains(AddressMock.city));
+        assert (address.getCountry().contains(AddressMock.country));
     }
 }
