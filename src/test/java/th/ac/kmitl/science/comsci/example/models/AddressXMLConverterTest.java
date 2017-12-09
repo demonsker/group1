@@ -27,7 +27,7 @@ public class AddressXMLConverterTest {
         
         String xml = AddressXMLConverter.getXml(address);
         
-        assert(!xml.equals(null));
+        assert (!xml.equals(null));
     }
     
 }

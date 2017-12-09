@@ -14,17 +14,17 @@ public class AddressXMLConverter  {
      // TODO Add Instance CountryCodeMapping
     
     String xml = "<ram:PostalCLTradeAddress> \n"
-                +"\t<ram:LineOne> "+address.getLineOne()+" </ram:LineOne> \n"
-                +"\t<ram:LineTwo> "+address.getLineTwo()+" </ram:LineTwo> \n"
-                +"\t<ram:LineThree> "+address.getLineThree()+" </ram:LinThree> \n"
-                +"\t<ram:LineFour> "+address.getLineFour()+" </ram:LineFour> \n"
-                +"\t<ram:LineFive> "+address.getLineFive()+" </ram:LineFive> \n"
-                +"\t<ram:StreetName> "+address.getStreet()+" </ram:StreetName> \n"
-                +"\t<ram:Cityname> "+cityCodeMapping.mapper(address.getCity())+" </ram:CityName> \n"
-                +"\t<ram:CitySubDivisionID> "+citySubDivisionMapping.mapper(address.getCitySubDivision())+" </ram:CitySubDivisionID> \n"
-                +"\t<ram:CountryID> "+address.getCountry()+" </ram:CountryID> \n"
-                +"\t<ram:CountrySubDivisionID> "+countrySubDivisionCodeMapping.mapper(address.getCountrySubDivision())+" </ram:CountrySubDivisionID> \n"
-                +"<ram:PostalCLTradeAddress> \n";   
+                +"\t<ram:LineOne>"+address.getLineOne()+"</ram:LineOne> \n"
+                +"\t<ram:LineTwo>"+address.getLineTwo()+"</ram:LineTwo> \n"
+                +"\t<ram:LineThree>"+address.getLineThree()+"</ram:LinThree> \n"
+                +"\t<ram:LineFour>"+address.getLineFour()+"</ram:LineFour> \n"
+                +"\t<ram:LineFive>"+address.getLineFive()+"</ram:LineFive> \n"
+                +"\t<ram:StreetName>"+address.getStreet()+"</ram:StreetName> \n"
+                +"\t<ram:Cityname>"+cityCodeMapping.mapper(address.getCity())+" </ram:CityName> \n"
+                +"\t<ram:CitySubDivisionID>"+citySubDivisionMapping.mapper(address.getCitySubDivision())+"</ram:CitySubDivisionID> \n"
+                +"\t<ram:CountryID>"+address.getCountry()+"</ram:CountryID>\n"
+                +"\t<ram:CountrySubDivisionID>"+countrySubDivisionCodeMapping.mapper(address.getCountrySubDivision())+"</ram:CountrySubDivisionID> \n"
+                +"<ram:PostalCLTradeAddress>\n";   
         return xml;
     }
     
