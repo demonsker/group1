@@ -121,7 +121,7 @@ public class CityName implements Mapping {
     }
 
     @Override
-    public int mapper(String name) throws NullPointerException{
+    public int mapper(String name){
         return map.get(name);
     }
     
