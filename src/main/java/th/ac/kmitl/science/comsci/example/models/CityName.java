@@ -121,7 +121,9 @@ public class CityName implements Mapping {
     }
 
     @Override
-    public int mapper(String name){
+    public int mapper(String name) throws IndexOutOfBoundsException{
+        if(map.get(name) == null)
+            throw new IndexOutOfBoundsException("Not found city name to map");
         return map.get(name);
     }
     
