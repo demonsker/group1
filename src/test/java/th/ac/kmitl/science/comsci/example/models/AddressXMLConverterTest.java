@@ -25,39 +25,9 @@ public class AddressXMLConverterTest {
         address.setCountrySubDivision(AddressMock.countrySubDivision);
         address.setCountry(AddressMock.country);
         
-        AddressXMLConverter addressXMLConverter = new AddressXMLConverter(address);
+        String xml = AddressXMLConverter.getXml(address);
         
-        assert(!addressXMLConverter.getXml().equals(null));
-        assert(addressXMLConverter.getCitySubDivisionId() == 103704);
-        assert(addressXMLConverter.getCityId() == 37);
-        assert(addressXMLConverter.getCountySubDivisionId() == 1);
+        assert(!xml.equals(null));
     }
     
-    @Test
-    public void testSetMapper() {
-        
-        Company buyer = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
-        
-        Address address = buyer.getAddressInstance();
-        address.setLineOne(AddressMock.lineOne);
-        address.setLineTwo(AddressMock.lineTwo);
-        address.setLineThree(AddressMock.lineThree);
-        address.setLineFour(AddressMock.lineFour);
-        address.setLineFive(AddressMock.lineFive);
-        address.setStreet(AddressMock.street);
-        address.setCitySubDivision(AddressMock.citySubDivision);
-        address.setCity(AddressMock.city);
-        address.setCountrySubDivision(AddressMock.countrySubDivision);
-        address.setCountry(AddressMock.country);
-        
-        AddressXMLConverter addressXMLConverter = new AddressXMLConverter(address);
-        
-        addressXMLConverter.SetCitySubDivisionNameToId("Bukkhalo");
-        addressXMLConverter.SetCountrySubDivisionNameToId("Bangkok");
-        addressXMLConverter.SetCityToId("Thon Buri");
-        
-        assert(addressXMLConverter.getCitySubDivisionId() == 101504);
-        assert(addressXMLConverter.getCityId() == 15);
-        assert(addressXMLConverter.getCountySubDivisionId() == 1);
-    }
 }

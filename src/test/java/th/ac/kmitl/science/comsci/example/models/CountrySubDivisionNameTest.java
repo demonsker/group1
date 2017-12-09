@@ -5,7 +5,7 @@ import th.ac.kmitl.science.comsci.example.models.mocks.AddressMock;
 
 public class CountrySubDivisionNameTest {
     
-    private CountrySubDivisionNameMapping countrySubDivisionMapping = new CountrySubDivisionNameMapping();
+    private CountrySubDivisionCodeMapping countrySubDivisionMapping = new CountrySubDivisionCodeMapping();
     private AddressMock mock = new AddressMock();
     
     @Test
