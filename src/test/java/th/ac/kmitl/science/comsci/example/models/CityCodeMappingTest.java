@@ -3,9 +3,9 @@ package th.ac.kmitl.science.comsci.example.models;
 import org.junit.Test;
 import th.ac.kmitl.science.comsci.example.models.mocks.AddressMock;
 
-public class CityNameMappingTest {
+public class CityCodeMappingTest {
     
-    private CityName cityMapping = new CityName();
+    private CityCodeMapping cityMapping = new CityCodeMapping();
     private AddressMock mock = new AddressMock();
     
     @Test
