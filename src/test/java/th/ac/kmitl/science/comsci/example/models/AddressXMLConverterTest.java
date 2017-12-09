@@ -3,6 +3,7 @@ package th.ac.kmitl.science.comsci.example.models;
 import org.junit.Test;
 import th.ac.kmitl.science.comsci.example.converters.AddressXMLConverter;
 import th.ac.kmitl.science.comsci.example.converters.CompanyXMLConverter;
+import th.ac.kmitl.science.comsci.example.models.mocks.AddressMock;
 import th.ac.kmitl.science.comsci.example.models.mocks.CompanyMock;
 
 public class AddressXMLConverterTest {
