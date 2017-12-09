@@ -14,7 +14,7 @@ public class CountryNameMappingTest {
         assert(countryMapping.mapper("America") == 2);
         assert(countryMapping.mapper("United States of America") == 2);
         assert(countryMapping.mapper("China") == 3);
-        assert(countryMapping.mapper("Endland") == 5);
+        assert(countryMapping.mapper("England") == 5);
         assert(countryMapping.mapper("Spain") == 7);
         assert(countryMapping.mapper("Brazil") == 8);
         assert(countryMapping.mapper("India") == 12);
