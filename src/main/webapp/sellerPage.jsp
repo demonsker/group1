@@ -24,5 +24,101 @@
     </tr>    
 </table>
 </h4> 
-
-<!-- TODO Create Input of Seller Address -->
+<h4>
+<table width="400">
+    <tr>
+        <td>ที่อยู่บรรทัดที่ 1</td>
+        <td><input type="text" name="sellerLineOne" size="30" /></td>
+    </tr>
+    <tr>
+        <td>ที่อยู่บรรทัดที่ 2</td>
+        <td><input type="text" name="sellerLineTwo" size="30" /></td>
+    </tr> 
+    <tr>
+        <td>ซอย</td>
+        <td><input type="text" name="sellerLineThree" size="30" /></td>
+    </tr>
+    <tr>
+        <td>หมู่บ้าน</td>
+        <td><input type="text" name="sellerLineFour" size="30" /></td>
+    </tr> 
+    <tr>
+        <td>หมู่ที่</td>
+        <td><input type="text" name="sellerLineFive" size="30" /></td>
+    </tr>
+    <tr>
+        <td>ถนน</td>
+        <td><input type="text" name="sellerStreet" value="" size="30" /></td>
+    </tr>
+    <tr>
+        <td>ตำบล</td>
+        <td><input type="text" name="sellerCitySubDivision" size="30" /></td>
+    </tr> 
+    <tr>
+        <td>อำเภอ</td>
+        <td><input type="text" name="sellerCity" size="30" /></td>
+    </tr>
+    <tr>
+        <td>จังหวัด</td>
+        <td>
+            <select name="sellerCountrySubDivision">
+                <jsp:include page="countrySubDivisionPage.jsp" />
+            </select>
+        </td>
+    </tr>   
+    <tr>
+        <td>ประเทศ</td>
+        <td><input type="text" name="sellerCountry" size="30" /></td>
+    </tr>
+</table>
+</h4>
+    <table width="400">
+        <tr>
+            <td>ที่อยู่บรรทัดที่ 1</td>
+            <td><input type="text" name="sellerLineOne" size="30" /></td>
+        </tr>
+        <tr>
+            <td>ที่อยู่บรรทัดที่ 2</td>
+            <td><input type="text" name="sellerLineTwo" size="30" /></td>
+        </tr> 
+        <tr>
+            <td>ซอย</td>
+            <td><input type="text" name="sellerLineThree" size="30" /></td>
+        </tr>
+        <tr>
+            <td>หมู่บ้าน</td>
+            <td><input type="text" name="sellerLineFour" size="30" /></td>
+        </tr> 
+        <tr>
+            <td>หมู่ที่</td>
+            <td><input type="text" name="sellerLineFive" size="30" /></td>
+        </tr>
+        <tr>
+            <td>ถนน</td>
+            <td><input type="text" name="sellerStreet" value="" size="30" /></td>
+        </tr>
+        <tr>
+            <td>ตำบล</td>
+            <td><input type="text" name="sellerCitySubDivision" size="30" /></td>
+        </tr> 
+        <tr>
+            <td>อำเภอ</td>
+            <td>
+                <select name="sellerCity">
+                    <jsp:include page="cityPage.jsp" />
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>จังหวัด</td>
+            <td>
+                <select name="sellerCountrySubDivision">
+                    <jsp:include page="countrySubDivisionPage.jsp" />
+                </select>
+            </td>
+        </tr>   
+        <tr>
+            <td>ประเทศ</td>
+            <td><input type="text" name="sellerCountry" size="30" /></td>
+        </tr>
+    </table>
