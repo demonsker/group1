@@ -2,7 +2,7 @@ package th.ac.kmitl.science.comsci.example.converters;
 
 import th.ac.kmitl.science.comsci.example.models.Company;
 
-public class CompanyXMLConverter  {
+public class CompanyXMLConverter implements XMLConverter  {
     
     private String headTag;
     private String companyId;
@@ -35,6 +35,7 @@ public class CompanyXMLConverter  {
     }
      
     public String getXml() {
+        setXml();
         return this.xml;
     }
     
@@ -78,6 +79,11 @@ public class CompanyXMLConverter  {
     
     public void setCompanyTax(String companyTax) {
         this.companyTax = companyTax;
+    }
+
+    @Override
+    public boolean isEmptyXML() {
+        return (xml ==  null);
     }
   
 }

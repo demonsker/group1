@@ -5,7 +5,7 @@ import th.ac.kmitl.science.comsci.example.models.mocks.AddressMock;
 
 public class CityNameMappingTest {
     
-    private CityName cityMapping = new CityName();
+    private CityNameMapping cityMapping = new CityNameMapping();
     private AddressMock mock = new AddressMock();
     
     @Test
