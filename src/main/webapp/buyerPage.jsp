@@ -65,10 +65,10 @@
                     <td>
                         <select name="buyerCity">
                             <%
-                                ArrayList<String> cityname = new CityName().getCityList();
+                                ArrayList<String> cityName = new CityName().getCityList();
                                 
-                                for(int i = 0; i < cityname.size() ; i++)
-                                    out.println("<option>"+cityname.get(i)+"</option>");
+                                for(int i = 0; i < cityName.size() ; i++)
+                                    out.println("<option>"+cityName.get(i)+"</option>");
                             %>
                         </select>
                     </td>
