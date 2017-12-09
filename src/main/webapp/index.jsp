@@ -6,9 +6,11 @@
 
 <html>
     <head>
-        <title> CS-KMITL: Group 1</title>
+        <link rel="stylesheet" type="text/css" href="css/tab.css">
+        <title>หน้าหลัก</title>
     </head>
     <body>
-        <h1><c:out value = "${requestScope.message}" /></h1>
+        <H3>ใบกำกับภาษีอิเล็กทรอนิกส์</H3>
+        <a href="createTaxInvoice.jsp"><button class="btn">ออกใบกำกับภาษี</button></a>
     </body>
 </html>
