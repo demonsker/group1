@@ -1,7 +1,70 @@
 package th.ac.kmitl.science.comsci.example.models;
 
+import java.util.ArrayList;
+
 public class CityName implements Mapping {
     
+    private ArrayList<String> name; 
+
+    public CityName(){
+        name = new ArrayList<String>(); 
+
+        name.add("Phra Nakhon");
+        name.add("Dusit");
+        name.add("Nong Chok");
+        name.add("Bang Ruk");
+        name.add("Bang Khen");
+        name.add("Bang Kapi");
+        name.add("Pathum Wan");
+        name.add("Pom Prap Sattru Phai");
+        name.add("Phra Khanong");
+        name.add("Min Buri");
+        name.add("Lat Krabang");
+        name.add("Yan Nawa");
+        name.add("Samphanthawong");
+        name.add("Phaya Thai");
+        name.add("Thon Buri");
+        name.add("Bangkok Yai");
+        name.add("Huai Khwang");
+        name.add("Khlong San");
+        name.add("Taling Chan");
+        name.add("Bangkok Noi");
+        name.add("Bang Khun Thian");
+        name.add("Phasi Charoen");
+        name.add("Nong Khaem");
+        name.add("Rat Burana");
+        name.add("Bang Phlat");
+        name.add("Din Daeng");
+        name.add("Bueng Kum");
+        name.add("Sathon");
+        name.add("Bang Sue");
+        name.add("Chatuchak");
+        name.add("Bang Kho Laem");
+        name.add("Prawet");
+        name.add("Khlong Toei");
+        name.add("Suan Luang");
+        name.add("Chom Thong");
+        name.add("Don Mueang");
+        name.add("Ratchathewi");
+        name.add("Lat Phrao");
+        name.add("Watthana");
+        name.add("Bang Khae");
+        name.add("Lak Si");
+        name.add("Sai Mai");
+        name.add("Khan Na Yao");
+        name.add("Saphan Sung");
+        name.add("Wang Thonglang");
+        name.add("Khlong Sam Wa");
+        name.add("Bang Na");
+        name.add("Thawi Watthana");
+        name.add("Thung Khru");
+        name.add("Bang Bon");
+    }
+
+    public ArrayList<String> getCityList(){
+        return this.name;
+    }
+
     @Override
     public int mapper(String name){
         switch(name){
