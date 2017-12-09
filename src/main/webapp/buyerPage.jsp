@@ -1,4 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@ page import="java.util.ArrayList" %>
+<%@ page import="th.ac.kmitl.science.comsci.example.models.CityName" %>
+
 <h2>ผู้ซื้อ</h2>
 <h4>
 <table width="1000">
@@ -61,16 +64,19 @@
                     <td>อำเภอ</td>
                     <td>
                         <select name="buyerCity">
-                            <jsp:include page="cityPage.jsp" />
+                            <%
+                                ArrayList<String> cityname = new CityName().getCityList();
+                                
+                                for(int i = 0; i < cityname.size() ; i++)
+                                    out.println("<option>"+cityname.get(i)+"</option>");
+                            %>
                         </select>
                     </td>
                 </tr>    
                 <tr>
                     <td>จังหวัด</td>
                     <td>
-                        <select name="buyerCountrySubDivision">
-                            <jsp:include page="countrySubDivisionPage.jsp" />
-                        </select>
+                        <input type="text" name="buyerCountrySubDivision" size="30" />
                     </td>
                 </tr>   
                 <tr>
