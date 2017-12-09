@@ -1,6 +1,6 @@
 package th.ac.kmitl.science.comsci.example.models;
 
-public class CitySubDivisionMapping implements Mapping {
+public class CitySubDivisionCodeMapping implements Mapping {
 
     @Override
     public int mapper(String name) {

@@ -7,24 +7,18 @@ import th.ac.kmitl.science.comsci.example.models.mocks.CompanyMock;
 public class CompanyXMLConverterTest {
  
     @Test
-    public void testConstructor() {
+    public void testConverterToXML() {
         
         Company buyer = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
-        CompanyXMLConverter companyXMLConverter = new CompanyXMLConverter(buyer,"buyer");
         
-        assert(!companyXMLConverter.getXml().equals(null));  
+        String buyerXML = CompanyXMLConverter.getXml(buyer, "buyer");
+        assert (!buyerXML.equals(null)); 
+        assert (CompanyXMLConverter.headTag.equals("BuyerCITradeParty"));
+        
+        Company seller = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
+        String sellerXML = CompanyXMLConverter.getXml(seller, "Seller");
+        assert (!sellerXML.equals(null));
+        assert (CompanyXMLConverter.headTag.equals("SellerCITradeParty"));
     }
     
-    @Test
-    public void testSetHeadtag() {
-        
-        Company buyer = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
-        CompanyXMLConverter companyXMLConverter = new CompanyXMLConverter(buyer,"buyer");
-        
-        assert(companyXMLConverter.getHeadTag().equals("BuyerCITradeParty"));
-        
-        companyXMLConverter.setHeadTag("seller");
-        
-        assert(companyXMLConverter.getHeadTag().equals("SellerCITradeParty"));
-    }
 }
