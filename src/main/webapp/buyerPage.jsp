@@ -24,5 +24,53 @@
     </tr>    
 </table>
 </h4>
-
-<!-- TODO Create Input of Buyer Address -->
+<table width="400">
+    <tr>
+        <td>ที่อยู่บรรทัดที่ 1</td>
+        <td><input type="text" name="buyerLineOne" size="30" /></td>
+    </tr>
+    <tr>
+        <td>ที่อยู่บรรทัดที่ 2</td>
+        <td><input type="text" name="buyerLineTwo" size="30" /></td>
+    </tr> 
+    <tr>
+        <td>ซอย</td>
+        <td><input type="text" name="buyerLineThree" size="30" /></td>
+    </tr>
+    <tr>
+        <td>หมู่บ้าน</td>
+        <td><input type="text" name="buyerLineFour" size="30" /></td>
+    </tr> 
+    <tr>
+        <td>หมู่ที่</td>
+        <td><input type="text" name="buyerLineFive" size="30" /></td>
+    </tr>
+    <tr>
+        <td>ถนน</td>
+        <td><input type="text" name="buyerStreet" value="" size="30" /></td>
+    </tr>
+    <tr>
+        <td>ตำบล</td>
+        <td><input type="text" name="buyerCitySubDivision" size="30" /></td>
+    </tr> 
+    <tr>
+        <td>อำเภอ</td>
+        <td>
+            <select name="buyerCity">
+                <jsp:include page="cityPage.jsp" />
+            </select>
+        </td>
+    </tr>    
+    <tr>
+        <td>จังหวัด</td>
+        <td>
+            <select name="buyerCountrySubDivision">
+                <jsp:include page="countrySubDivisionPage.jsp" />
+            </select>
+        </td>
+    </tr>   
+    <tr>
+        <td>ประเทศ</td>
+        <td><input type="text" name="buyerCountry" size="30" /></td>
+    </tr>
+</table>
