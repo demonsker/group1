@@ -11,8 +11,14 @@ public class CompanyXMLConverterTest {
         
         Company buyer = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
         
-        String XML = CompanyXMLConverter.getXml(buyer,"buyer");
-        assert(!XML.equals(null));  
+        String buyerXML = CompanyXMLConverter.getXml(buyer,"buyer");
+        assert(!buyerXML.equals(null)); 
+        assert (CompanyXMLConverter.headTag.equals("BuyerCITradeParty"));
+        
+        Company seller = new Company(CompanyMock.id, CompanyMock.name, CompanyMock.globalId, CompanyMock.taxId);
+        String sellerXML = CompanyXMLConverter.getXml(seller,"Seller");
+        assert(!sellerXML.equals(null));
+        assert (CompanyXMLConverter.headTag.equals("SellerCITradeParty"));
     }
     
 }

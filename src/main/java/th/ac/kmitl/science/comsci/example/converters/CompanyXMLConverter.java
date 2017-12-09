@@ -4,7 +4,7 @@ import th.ac.kmitl.science.comsci.example.models.Company;
 
 public class CompanyXMLConverter  {
 
-    private String headTag;
+    public static String headTag;
     
     public  static String getXml(Company company,String headTag) {
          HeadTagCompanyXMLConverter headTags = HeadTagCompanyXMLConverter.valueOf(headTag);
@@ -15,8 +15,9 @@ public class CompanyXMLConverter  {
                      +"\n</ram:"+headTags.getheadTag()+">"
                      +"\n<ram:SpecifiedClLegalOrganization> "
                      +"\n\t<ram:ID> "+company.getTaxId()+" </ram:ID>"
-                     +"\n</ram:SpecifiedClLegalOrganization> ";  
+                     +"\n</ram:SpecifiedClLegalOrganization> "; 
+                     CompanyXMLConverter.headTag = headTags.getheadTag();
         return xml;
     }
-
+    
 }
