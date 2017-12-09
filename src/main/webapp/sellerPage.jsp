@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList" %>
-<%@ page import="th.ac.kmitl.science.comsci.example.models.CityName" %>
+<%@ page import="th.ac.kmitl.science.comsci.example.models.CityCodeMapping" %>
 <h2>ผู้ขาย</h2>
 <h4>
 <table width="1000">
@@ -64,10 +64,10 @@
                     <td>
                         <select name="sellerCity">
                             <%
-                                ArrayList<String> cityname = new CityName().getCityList();
+                                ArrayList<String> cityName = new CityCodeMapping().getCityList();
                                 
-                                for(int i = 0; i < cityname.size() ; i++)
-                                    out.println("<option>"+cityname.get(i)+"</option>");
+                                for(int i = 0; i < cityName.size() ; i++)
+                                    out.println("<option>"+cityName.get(i)+"</option>");
                             %>
                         </select>
                     </td>
